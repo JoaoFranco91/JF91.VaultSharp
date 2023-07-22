@@ -18,8 +18,7 @@ dotnet add package JF91.VaultSharp
 
 - Get all secrets from path
 - Get secret name value
-- Get secret name value and update appsettings.json (Currently limited to one nested property)
-
+- Get secret name value and update appsettings.json
 
 <br>
 
