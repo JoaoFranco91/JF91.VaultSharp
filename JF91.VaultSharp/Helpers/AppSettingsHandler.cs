@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace JF91.VaultSharp.Helpers;
 
@@ -14,6 +15,12 @@ public class AppSettingsHandler
     {
         try
         {
+            key = key.Replace
+            (
+                ":",
+                "."
+            );
+
             var filePath = Path.Combine
             (
                 AppContext.BaseDirectory,
@@ -23,26 +30,24 @@ public class AppSettingsHandler
             );
 
             string json = File.ReadAllText(filePath);
-            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+            var jObject = JObject.Parse(json);
 
-            var sectionPath = key.Split(":")[0];
-
-            if (!string.IsNullOrEmpty(sectionPath))
-            {
-                var keyPath = key.Split(":")[1];
-                jsonObj[sectionPath][keyPath] = value;
-            }
-            else
-            {
-                jsonObj[sectionPath] = value; // if no sectionpath just set the value
-            }
+            var keyParts = key.Split(".");
+            var parentPath = key.Substring
+            (
+                0,
+                key.LastIndexOf(".")
+            );
+            
+            var parentToken = jObject.SelectToken(parentPath);
+            parentToken[keyParts.Last()] = value;
 
             string output = JsonConvert.SerializeObject
             (
-                jsonObj,
+                jObject,
                 Formatting.Indented
             );
-            
+
             File.WriteAllText
             (
                 filePath,

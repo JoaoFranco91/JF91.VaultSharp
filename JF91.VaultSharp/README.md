@@ -69,13 +69,31 @@ public ActionResult HelloWorld()
         "secretPath",
         "secretName"
     );
+    
+    _configuration.InjectSecretToConfiguration
+    (
+        "kv",
+        "test",
+        "test2",
+        "Secrets:Test",
+        "Development" // Application Environment
+    );
+    
+    _configuration.InjectSecretToConfiguration
+    (
+        "kv",
+        "test",
+        "test2",
+        "Secrets:Nested:Test",
+        "Development" // Application Environment
+    );
 
     _configuration.InjectSecretToConfiguration
     (
         "kv",
-        "secretPath",
-        "secretName",
-        "RootProperty:ChildProperty",
+        "test",
+        "test2",
+        "Secrets:Child[1]:Test",
         "Development" // Application Environment
     );
 

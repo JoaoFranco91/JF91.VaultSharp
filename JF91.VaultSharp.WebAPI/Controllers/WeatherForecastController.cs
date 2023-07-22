@@ -46,13 +46,31 @@ public class WeatherForecastController : ControllerBase
             "test",
             "test2"
         );
-
+        
         _configuration.InjectSecretToConfiguration
         (
             "kv",
             "test",
             "test2",
             "Secrets:Test",
+            Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
+        );
+        
+        _configuration.InjectSecretToConfiguration
+        (
+            "kv",
+            "test",
+            "test2",
+            "Secrets:Nested:Test",
+            Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
+        );
+
+        _configuration.InjectSecretToConfiguration
+        (
+            "kv",
+            "test",
+            "test2",
+            "Secrets:Child[1]:Test",
             Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
         );
 

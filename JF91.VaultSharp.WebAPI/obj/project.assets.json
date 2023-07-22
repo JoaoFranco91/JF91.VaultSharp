@@ -252,7 +252,7 @@
           }
         }
       },
-      "JF91.VaultSharp/0.0.1": {
+      "JF91.VaultSharp/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -885,7 +885,7 @@
         "vaultsharp.nuspec"
       ]
     },
-    "JF91.VaultSharp/0.0.1": {
+    "JF91.VaultSharp/0.0.2": {
       "type": "project",
       "path": "../JF91.VaultSharp/JF91.VaultSharp.csproj",
       "msbuildProject": "../JF91.VaultSharp/JF91.VaultSharp.csproj"
@@ -893,7 +893,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "JF91.VaultSharp >= 0.0.1",
+      "JF91.VaultSharp >= 0.0.2",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]

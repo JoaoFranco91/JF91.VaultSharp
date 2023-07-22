@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pk9G0nkwCF6wW1GYqzIJ1SVnfdONAmZdt0lqID0DguBxJ106T+koQt5b1w2vyKOSCPxGe6ZVYa0zZ4SZ9Ep3AA==",
+  "dgSpecHash": "4eUFT5AQSUgmRx64MHX93HyLFN31HuHoEREi5HPSkmrQOU0+X2Lc2yh4ujoCNZK7vPP6jvQhCdQI4EoiLvezxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.VaultSharp\\JF91.VaultSharp.WebAPI\\JF91.VaultSharp.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,7 @@
     "C:\\Users\\Joao\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\vaultsharp\\1.13.0.1\\vaultsharp.1.13.0.1.nupkg.sha512",
-    "C:\\Users\\Joao\\.nuget\\packages\\jf91.vaultsharp\\0.0.1\\jf91.vaultsharp.0.0.1.nupkg.sha512"
+    "C:\\Users\\Joao\\.nuget\\packages\\jf91.vaultsharp\\0.0.2\\jf91.vaultsharp.0.0.2.nupkg.sha512"
   ],
   "logs": []
 }

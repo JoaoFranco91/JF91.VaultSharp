@@ -437,7 +437,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "restore": {
       "projectUniqueName": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.VaultSharp\\JF91.VaultSharp\\JF91.VaultSharp.csproj",
       "projectName": "JF91.VaultSharp",

@@ -4,15 +4,19 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <Title>JF91.VaultSharp</Title>
         <Description>Simple Hashicorp Vault Client</Description>
         <Copyright>João Franco</Copyright>
         <PackageLicenseUrl>https://github.com/JoaoFranco91/JF91.SerilogWithLoki.Net7</PackageLicenseUrl>
         <PackageTags>vault</PackageTags>
-        <PackageReleaseNotes>0.0.2:
+        <PackageReleaseNotes>0.0.3:
+# Added ability to update any nested settings including object arrays.
+
+0.0.2:
 # Added method to retrieve secret value from Vault and update appsettings.json
 # Added Token authentication
+
 0.0.1:
 # AppRole Authentication
 # Vault settings from appsettings.json
