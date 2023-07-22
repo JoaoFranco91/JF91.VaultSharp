@@ -12,11 +12,13 @@
         <PackageTags>vault</PackageTags>
         <PackageReleaseNotes>0.0.2:
 # Added method to retrieve secret value from Vault and update appsettings.json
-
+# Added Token authentication
 0.0.1:
 # AppRole Authentication
 # Vault settings from appsettings.json
 # Added method: Get Vault Secret</PackageReleaseNotes>
+        <PackageProjectUrl>https://github.com/JoaoFranco91/JF91.VaultSharp</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/JoaoFranco91/JF91.VaultSharp</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
